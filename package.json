@@ -1,0 +1,32 @@
+{
+  "name": "crypto-solana-ai-agent",
+  "version": "1.0.0",
+  "description": "Full-stack AI agent on Solana for token swaps, launches, transfers, NFT mints, and transfers",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "shared"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": [
+    "solana",
+    "ai-agent",
+    "token-swap",
+    "nft-mint",
+    "blockchain",
+    "web3",
+    "react-vite"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
